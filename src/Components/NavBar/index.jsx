@@ -46,7 +46,7 @@ const Navbar = () => {
           </NavLink>
         </li>
         <li>
-          Icon
+          🛒0
         </li>
 
       </ul>
@@ -54,3 +54,5 @@ const Navbar = () => {
     </nav>
   )
 }
+
+export default Navbar
