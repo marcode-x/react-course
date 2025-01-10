@@ -13,13 +13,14 @@ function Home() {
 
   return (
     <Layout>
-      Homex
-      {
-        items?.map(() => {
-          return <Card />
-        })
-      }
-      <Card />
+      Home
+      <div className="grid gap-3 grid-cols-3 w-full max-w-screen-lg">
+        {
+          items?.map(item => (
+            <Card key={item.id} data={item} />
+          ))
+        }
+      </div>
     </Layout>
   )
 }
