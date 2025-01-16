@@ -14,22 +14,64 @@ const Navbar = () => {
           <NavLink to='/'>Shopi</NavLink>
         </li>
         <li>
-          <NavLink to='/'>All</NavLink>
+          <NavLink
+            to='/'
+            onClick={() => context.setSearchByCategory()}
+            className={({ isActive }) =>
+              isActive ? activeStyle : undefined
+            }>
+            All
+          </NavLink>
         </li>
         <li>
-          <NavLink to='/clothes'>Clothes</NavLink>
+          <NavLink
+            to='/clothes'
+            onClick={() => context.setSearchByCategory("clothes")}
+            className={({ isActive }) =>
+              isActive ? activeStyle : undefined
+            }>
+            Clothes
+          </NavLink>
         </li>
         <li>
-          <NavLink to='/electronics'>Electronics</NavLink>
+          <NavLink
+            to='/electronics'
+            onClick={() => context.setSearchByCategory("electronics")}
+            className={({ isActive }) =>
+              isActive ? activeStyle : undefined
+            }>
+            Electronics
+          </NavLink>
         </li>
         <li>
-          <NavLink to='/furnitures'>Furnitures</NavLink>
+          <NavLink
+            to='/furnitures'
+            onClick={() => context.setSearchByCategory("furnitures")}
+            className={({ isActive }) =>
+              isActive ? activeStyle : undefined
+            }>
+            Furnitures
+          </NavLink>
         </li>
         <li>
-          <NavLink to='/toys'>Toys</NavLink>
+          <NavLink
+            to='/toys'
+            onClick={() => context.setSearchByCategory("toys")}
+            className={({ isActive }) =>
+              isActive ? activeStyle : undefined
+            }>
+            Toys
+          </NavLink>
         </li>
         <li>
-          <NavLink to='/others'>Others</NavLink>
+          <NavLink
+            to='/others'
+            onClick={() => context.setSearchByCategory("others")}
+            className={({ isActive }) =>
+              isActive ? activeStyle : undefined
+            }>
+            Others
+          </NavLink>
         </li>
       </ul>
       <ul className="flex items-center gap-3">
